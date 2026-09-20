@@ -59,11 +59,7 @@ export function HorizontalBars({
         return (
           <g key={item.label} transform={`translate(0 ${y})`}>
             <foreignObject x={0} y={2} width={labelWidth - 10} height={rowHeight - 2}>
-              <div
-                xmlns="http://www.w3.org/1999/xhtml"
-                css={barLabel}
-                title={item.label}
-              >
+              <div css={barLabel} title={item.label}>
                 {item.label}
               </div>
             </foreignObject>

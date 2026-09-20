@@ -1,3 +1,4 @@
+import { digestArticleLimit } from "./api";
 import fuegoResponse from "./fuego-response.json";
 
 export type Digest = {
@@ -265,7 +266,7 @@ export function digestOverlapsDate(digest: Digest, isoDate: string) {
   return begin <= dayEnd && end >= dayStart;
 }
 
-export function getDummyDigests(theme: string, limit = 2) {
+export function getDummyDigests(theme: string, limit = digestArticleLimit) {
   return dummy.digests
     .filter((digest) => digest.theme === theme)
     .slice(0, limit);
