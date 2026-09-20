@@ -197,7 +197,7 @@ export default function DailyThemes() {
                 : `Pulse of ${formatHeadingDate(selectedDate)}`}
             </h2>
             <p css={sectionNote}>
-              Updates every day 8:00 am EST · {getThemeLabel(activeThemeId, themes)}
+              Updates every day 8:00 am EST 
             </p>
           </div>
         </div>
